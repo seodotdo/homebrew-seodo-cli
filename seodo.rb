@@ -10,18 +10,18 @@ class Seodo < Formula
 
   head "https://github.com/seodotdo/seodo-cli.git"
 
-  depends_on "python"
+  depends_on "python@3"
 
   version "0.0.12"
+
+  resource "pip" do
+    url "https://files.pythonhosted.org/packages/54/2e/df11ea7e23e7e761d484ed3740285a34e38548cf2bad2bed3dd5768ec8b9/pip-20.1-py2.py3-none-any.whl#sha256=4fdc7fd2db7636777d28d2e1432e2876e30c2b790d461f135716577f73104369"
+    sha256 "4fdc7fd2db7636777d28d2e1432e2876e30c2b790d461f135716577f73104369"
+  end
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl#sha256=1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
     sha256 "1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
-  end
-
-  resource "libvirt-python" do
-    url "https://libvirt.org/sources/python/libvirt-python-5.10.0.tar.gz"
-    sha256 "d204700b3421c8decdcd73c6d12980423c3d6171fc1437ba49470c2c60ebb45a"
   end
 
   resource "chardet" do
