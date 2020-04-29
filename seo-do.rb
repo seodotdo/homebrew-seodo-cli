@@ -1,12 +1,14 @@
-class Seo_do < Formula
+class Seodo < Formula
   include Language::Python::Virtualenv
 
   desc "An SEO cli that help SEO professionals to organize keywords by different grouping algorithms"
   homepage "https://seo.do"
   url "https://github.com/seodotdo/seodo-cli/releases/download/v0.0.1/seodo-cli-0.0.1.tar.gz"
   sha256 "ab0558c0ae227408dd53973362dd91503a82c0749f22bf8994ace7f7a65861b2"
-  head "https://github.com/seodotdo/seodo-cli.git"
+  revision 1
 
+
+  head "https://github.com/seodotdo/seodo-cli.git"
   depends_on "python@3"
 
   version "0.0.1"
