@@ -7,5 +7,4 @@ venv/
 setup.py
 dist
 dist/
-seo-do.rb
 pyproject.toml
