@@ -3,15 +3,16 @@ class Seodo < Formula
 
   desc "An SEO cli that help SEO professionals to organize keywords by different grouping algorithms"
   homepage "https://seo.do"
-  url "https://github.com/seodotdo/seodo-cli/releases/download/v0.0.1/seodo-cli-0.0.1.tar.gz"
-  sha256 "ab0558c0ae227408dd53973362dd91503a82c0749f22bf8994ace7f7a65861b2"
+  url "https://github.com/seodotdo/seodo-cli/releases/download/v0.0.12/seodo-0.0.12.tar.gz"
+  sha256 "4781347405dcd427e4adb60e9af46b686dd253c5d956699bc324198c5cb7c166"
   revision 1
 
 
   head "https://github.com/seodotdo/seodo-cli.git"
+
   depends_on "python@3"
 
-  version "0.0.1"
+  version "0.0.12"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl#sha256=1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
