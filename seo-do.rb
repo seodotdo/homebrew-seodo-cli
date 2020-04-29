@@ -1,4 +1,4 @@
-class seo-do < Formula
+class Seodo < Formula
   include Language::Python::Virtualenv
 
   desc "An SEO cli that help SEO professionals to organize keywords by different grouping algorithms"
