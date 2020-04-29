@@ -10,7 +10,7 @@ class Seodo < Formula
 
   head "https://github.com/seodotdo/seodo-cli.git"
 
-  depends_on "python"
+  depends_on "python@3"
 
   version "0.0.12"
 
@@ -55,7 +55,7 @@ class Seodo < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_install_with_resources, :using => "python3"
   end
 
   # TODO: Add your package's tests here
