@@ -7,8 +7,7 @@ class Seodo < Formula
   sha256 "ab0558c0ae227408dd53973362dd91503a82c0749f22bf8994ace7f7a65861b2"
   head "https://github.com/seodotdo/seodo-cli.git"
 
-  # TODO: If you're submitting an existing package, make sure you include your
-  #       bottle block here.
+  depends_on :python
 
   depends_on :python3
 
