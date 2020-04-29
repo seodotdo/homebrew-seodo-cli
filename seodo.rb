@@ -19,6 +19,11 @@ class Seodo < Formula
     sha256 "1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
   end
 
+  resource "libvirt-python" do
+    url "https://libvirt.org/sources/python/libvirt-python-5.10.0.tar.gz"
+    sha256 "d204700b3421c8decdcd73c6d12980423c3d6171fc1437ba49470c2c60ebb45a"
+  end
+
   resource "chardet" do
     url "https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl#sha256=fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
     sha256 "fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
