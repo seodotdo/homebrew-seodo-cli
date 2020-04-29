@@ -55,7 +55,26 @@ class Seodo < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    venv.pip_install resources
+
+    # virt-manager uses distutils, doesn't like --single-version-externally-managed
+    system "#{libexec}/bin/python", "setup.py",
+                     "configure",
+                     "--prefix=#{libexec}"
+    system "#{libexec}/bin/python", "setup.py",
+                     "--no-user-cfg",
+                     "--no-update-icon-cache",
+                     "--no-compile-schemas",
+                     "install"
+
+    # install virt-manager commands with PATH set to Python virtualenv environment
+    bin.install Dir[libexec/"bin/virt-*"]
+    bin.env_script_all_files(libexec/"bin", :PATH => "#{libexec}/bin:$PATH")
+
+    share.install Dir[libexec/"share/man"]
+    share.install Dir[libexec/"share/glib-2.0"]
+    share.install Dir[libexec/"share/icons"]
   end
 
   # TODO: Add your package's tests here
