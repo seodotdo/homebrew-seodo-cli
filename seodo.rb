@@ -10,7 +10,7 @@ class Seodo < Formula
 
   head "https://github.com/seodotdo/seodo-cli.git"
 
-  depends_on "python@3.8"
+  depends_on "python"
 
   version "0.0.12"
 
