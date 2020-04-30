@@ -10,7 +10,7 @@ class Seodo < Formula
   revision 1
 
   depends_on "python@3"
-  depends_on "clikit" => :python
+  depends_on "poetry" => :python
   depends_on "poetry"
 
   resource "setuptools" do
