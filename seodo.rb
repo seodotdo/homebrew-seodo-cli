@@ -3,21 +3,14 @@ class Seodo < Formula
 
   desc "An SEO cli that help SEO professionals to organize keywords by different grouping algorithms"
   homepage "https://seo.do"
-  url "https://github.com/seodotdo/seodo-cli/releases/download/v0.0.12/seodo-0.0.12.tar.gz"
-  sha256 "4781347405dcd427e4adb60e9af46b686dd253c5d956699bc324198c5cb7c166"
-  revision 1
-
-
+  url "https://github.com/seodotdo/seodo-cli/releases/download/v0.0.13/seodo-0.0.13.tar.gz"
+  sha256 "7545d2ebaf43f71e090bc27b61a736cd4b9fc5e3cf8d21a33818830e0dfa36c8"
   head "https://github.com/seodotdo/seodo-cli.git"
+
+  revision 1
 
   depends_on "python@3"
 
-  version "0.0.12"
-
-  resource "pip" do
-    url "https://files.pythonhosted.org/packages/54/2e/df11ea7e23e7e761d484ed3740285a34e38548cf2bad2bed3dd5768ec8b9/pip-20.1-py2.py3-none-any.whl#sha256=4fdc7fd2db7636777d28d2e1432e2876e30c2b790d461f135716577f73104369"
-    sha256 "4fdc7fd2db7636777d28d2e1432e2876e30c2b790d461f135716577f73104369"
-  end
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl#sha256=1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
@@ -60,26 +53,7 @@ class Seodo < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
-    venv.pip_install resources
-
-    # virt-manager uses distutils, doesn't like --single-version-externally-managed
-    system "#{libexec}/bin/python", "setup.py",
-                     "configure",
-                     "--prefix=#{libexec}"
-    system "#{libexec}/bin/python", "setup.py",
-                     "--no-user-cfg",
-                     "--no-update-icon-cache",
-                     "--no-compile-schemas",
-                     "install"
-
-    # install virt-manager commands with PATH set to Python virtualenv environment
-    bin.install Dir[libexec/"bin/virt-*"]
-    bin.env_script_all_files(libexec/"bin", :PATH => "#{libexec}/bin:$PATH")
-
-    share.install Dir[libexec/"share/man"]
-    share.install Dir[libexec/"share/glib-2.0"]
-    share.install Dir[libexec/"share/icons"]
+    virtualenv_install_with_resources
   end
 
   # TODO: Add your package's tests here
