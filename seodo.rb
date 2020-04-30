@@ -78,7 +78,7 @@ class Seodo < Formula
 
   def install
     venv = virtualenv_create(libexec)
-    %w[clikit cleo poetry].each do |r|
+    %w[poetry clikit cleo].each do |r|
         venv.pip_install resource(r)
     end
     venv.pip_install resources
