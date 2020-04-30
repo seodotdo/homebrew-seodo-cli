@@ -66,11 +66,6 @@ class Seodo < Formula
     sha256 "16b8aa2703413eae1138b50bdf825cb1465e0ee456efab4e8effe3bf03b7c2a4"
   end
 
-  resource "cleo" do
-    url "https://files.pythonhosted.org/packages/99/d5/409b11936085c97ea7c9f596b7fcc3aac0cd9243bbba64be914bb9142bc2/cleo-0.7.6.tar.gz"
-    sha256 "99cf342406f3499cec43270fcfaf93c126c5164092eca201dfef0f623360b409"
-  end
-
   resource "cachy" do
     url "https://files.pythonhosted.org/packages/a0/0c/45b249b0efce50a430b8810ec34c5f338d853c31c24b0b297597fd28edda/cachy-0.3.0.tar.gz"
     sha256 "186581f4ceb42a0bbe040c407da73c14092379b1e4c0e327fdb72ae4a9b269b1"
