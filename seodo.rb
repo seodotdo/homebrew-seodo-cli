@@ -12,9 +12,9 @@ class Seodo < Formula
   depends_on "python@3"
 
 
-  resource "certifi" do
-    url "https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl#sha256=1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
-    sha256 "1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
+  resource "requests" do
+    url "https://files.pythonhosted.org/packages/1a/70/1935c770cb3be6e3a8b78ced23d7e0f3b187f5cbfab4749523ed65d7c9b1/requests-2.23.0-py2.py3-none-any.whl#sha256=43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"
+    sha256 "43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"
   end
 
   resource "chardet" do
@@ -42,14 +42,14 @@ class Seodo < Formula
     sha256 "88206b0eb87e6d677d424843ac5209e3fb9d0190d0ee169599165ec25e9d9115"
   end
 
-  resource "requests" do
-    url "https://files.pythonhosted.org/packages/1a/70/1935c770cb3be6e3a8b78ced23d7e0f3b187f5cbfab4749523ed65d7c9b1/requests-2.23.0-py2.py3-none-any.whl#sha256=43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"
-    sha256 "43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"
-  end
-
   resource "tabulate" do
     url "https://files.pythonhosted.org/packages/57/6f/213d075ad03c84991d44e63b6516dd7d185091df5e1d02a660874f8f7e1e/tabulate-0.8.7.tar.gz#sha256=db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"
     sha256 "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"
+  end
+
+  resource "certifi" do
+    url "https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl#sha256=1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
+    sha256 "1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"
   end
 
   def install
