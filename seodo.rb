@@ -62,8 +62,8 @@ class Seodo < Formula
   end
 
   resource "clikit" do
-    url "https://files.pythonhosted.org/packages/f7/21/60e3fde0cb52937da5fe05259e73f3511a0ad656a7ce4b3e8ea2a8604bb5/clikit-0.6.0.tar.gz"
-    sha256 "16b8aa2703413eae1138b50bdf825cb1465e0ee456efab4e8effe3bf03b7c2a4"
+    url "https://files.pythonhosted.org/packages/17/c1/72bb34dcb120d32850543389e8d40b5bacba447152832569ba081113f003/clikit-0.4.2.tar.gz"
+    sha256 "f67336462800078e0896cf6ecfa3b460dfea4dfa01de659388a4ff0d83c8d6ca"
   end
 
   resource "cachy" do
