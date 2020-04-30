@@ -3,8 +3,8 @@ class Seodo < Formula
 
   desc "An SEO cli that help SEO professionals to organize keywords by different grouping algorithms"
   homepage "https://seo.do"
-  url "https://github.com/seodotdo/seodo-cli/releases/download/v0.0.13/seodo-0.0.13.tar.gz"
-  sha256 "7545d2ebaf43f71e090bc27b61a736cd4b9fc5e3cf8d21a33818830e0dfa36c8"
+  url "https://github.com/seodotdo/seodo-cli/releases/download/v0.0.14/seodo-0.0.14.tar.gz"
+  sha256 "6b56dae403ca94b91289db7ec639731470a2e2a00d5195a91db67a40087c1a20"
   head "https://github.com/seodotdo/seodo-cli.git"
 
   revision 1
