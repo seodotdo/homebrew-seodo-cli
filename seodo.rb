@@ -96,11 +96,6 @@ class Seodo < Formula
     sha256 "a7d21ba4e3633d95ac9fed5be205ee6d1da36bdc4b8914eb7a57ff50b7e5628c"
   end
 
-  resource "pkginfo" do
-    url "https://files.pythonhosted.org/packages/d4/76/cf29c3b070bf95dfa8b59e23a0c19e42483a4d20987c74b30ed4df2ab911/pkginfo-1.4.0.tar.gz"
-    sha256 "0171c26cbf1064d878904afb314f7b1fb09129dc483bf895717ba50fabf3f130"
-  end
-
   resource "html5lib" do
     url "https://files.pythonhosted.org/packages/da/66/ea28be5e5aa471f499b2dac8dd57c0755743daaec050c418f6e24688aaa6/html5lib-1.0-reupload.tar.gz"
     sha256 "d09ae03efb1c64b489052110f570b7d6b0e9e0d30d66ba3c76f4340a215d5f80"
