@@ -62,6 +62,16 @@ class Seodo < Formula
     sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
   end
 
+  resource "clikit" do
+    url "https://files.pythonhosted.org/packages/17/c1/72bb34dcb120d32850543389e8d40b5bacba447152832569ba081113f003/clikit-0.4.2.tar.gz"
+    sha256 "f67336462800078e0896cf6ecfa3b460dfea4dfa01de659388a4ff0d83c8d6ca"
+  end
+
+  resource "cleo" do
+    url "https://files.pythonhosted.org/packages/99/d5/409b11936085c97ea7c9f596b7fcc3aac0cd9243bbba64be914bb9142bc2/cleo-0.7.6.tar.gz"
+    sha256 "99cf342406f3499cec43270fcfaf93c126c5164092eca201dfef0f623360b409"
+  end
+
   def install
     venv = virtualenv_create(libexec)
     %w[clikit cleo poetry].each do |r|
