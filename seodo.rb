@@ -61,6 +61,11 @@ class Seodo < Formula
     sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
   end
 
+  resource "typer" do
+    url "https://files.pythonhosted.org/packages/f1/ef/5f76002a54d0afdf02aa0b8e5612e2783445bb60290816a1a410319d7862/typer-0.1.1.tar.gz"
+    sha256 "180d746de86724f9f94e90fa95caa065b5af9b3b3c77fc9d4d4ca1b75adc0c01"
+  end
+
   def install
     virtualenv_install_with_resources
   end
