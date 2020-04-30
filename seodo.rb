@@ -10,7 +10,6 @@ class Seodo < Formula
   revision 1
 
   depends_on "python@3"
-  depends_on "poetry" => :python
   depends_on "poetry"
 
   resource "setuptools" do
@@ -63,14 +62,14 @@ class Seodo < Formula
     sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
   end
 
-  resource "cleo" do
-    url "https://files.pythonhosted.org/packages/99/d5/409b11936085c97ea7c9f596b7fcc3aac0cd9243bbba64be914bb9142bc2/cleo-0.7.6.tar.gz"
-    sha256 "99cf342406f3499cec43270fcfaf93c126c5164092eca201dfef0f623360b409"
+  resource "clikit" do
+    url "https://files.pythonhosted.org/packages/ae/8b/37e5d886838717cebd4d6d9d7ca739c14ef07cfa68c04b41beef6390b213/clikit-0.4.2-py2.py3-none-any.whl"
+    sha256 "95394982cfa460a77ded2f173380a958e5f90c16972307c19d79b96f6e335326"
   end
 
-  resource "poetry" do
-    url "https://files.pythonhosted.org/packages/2c/79/7fc6e1ac5ebff02e39f24a17ddf56ef6370797a8371e6cfc5c7b56d3a1ea/poetry-1.0.5.tar.gz"
-    sha256 "8e195ea8a4bce4f418a23fd828aa2f9ce06be7655720efd1d95beb0ee641030a"
+  resource "cleo" do
+    url "https://files.pythonhosted.org/packages/4b/9d/10a5923c14c4f0faa98216af5262938f468af76101d9cd124ad2054943c7/cleo-0.7.6-py2.py3-none-any.whl"
+    sha256 "9443d67e5b2da79b32d820ae41758dd6a25618345cb10b9a022a695e26b291b9"
   end
 
   resource "cachy" do
@@ -123,7 +122,10 @@ class Seodo < Formula
     sha256 "f044eda25647882e5ef22b43a1688fb6ab12af2fc50e8456cdfc751c873101cf"
   end
 
-
+  resource "poetry" do
+    url "https://files.pythonhosted.org/packages/2c/79/7fc6e1ac5ebff02e39f24a17ddf56ef6370797a8371e6cfc5c7b56d3a1ea/poetry-1.0.5.tar.gz"
+    sha256 "8e195ea8a4bce4f418a23fd828aa2f9ce06be7655720efd1d95beb0ee641030a"
+  end
 
   def install
     virtualenv_install_with_resources
