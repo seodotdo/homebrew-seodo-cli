@@ -10,7 +10,6 @@ class Seodo < Formula
   revision 1
 
   depends_on "python@3"
-  depends_on "poetry"
 
   resource "setuptools" do
     url "https://files.pythonhosted.org/packages/df/ed/bea598a87a8f7e21ac5bbf464102077c7102557c07db9ff4e207bd9f7806/setuptools-46.0.0.zip"
@@ -60,6 +59,11 @@ class Seodo < Formula
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/b8/e2/a3a86a67c3fc8249ed305fc7b7d290ebe5e4d46ad45573884761ef4dea7b/certifi-2020.4.5.1.tar.gz"
     sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
+  end
+
+  resource "poetry" do
+    url "https://files.pythonhosted.org/packages/56/a0/50114d4c37bd91396c6fc6c3184df7eecc6cbde128d1fb915099181f100f/poetry-1.1.0a1.tar.gz"
+    sha256 "01c5792a1cd1acfcbc086a26140d590c16288888bfc0734f11775023bb52dd44"
   end
 
   resource "clikit" do
