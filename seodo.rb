@@ -62,11 +62,6 @@ class Seodo < Formula
     sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
   end
 
-  resource "poetry" do
-    url "https://files.pythonhosted.org/packages/2c/79/7fc6e1ac5ebff02e39f24a17ddf56ef6370797a8371e6cfc5c7b56d3a1ea/poetry-1.0.5.tar.gz"
-    sha256 "8e195ea8a4bce4f418a23fd828aa2f9ce06be7655720efd1d95beb0ee641030a"
-  end
-
   def install
     virtualenv_install_with_resources
   end
