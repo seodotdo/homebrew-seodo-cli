@@ -10,6 +10,7 @@ class Seodo < Formula
   revision 1
 
   depends_on "python@3"
+  depends_on "poetry"
 
   resource "setuptools" do
     url "https://files.pythonhosted.org/packages/df/ed/bea598a87a8f7e21ac5bbf464102077c7102557c07db9ff4e207bd9f7806/setuptools-46.0.0.zip"
@@ -104,11 +105,6 @@ class Seodo < Formula
   resource "shellingham" do
     url "https://files.pythonhosted.org/packages/28/44/2da09f0d1f93b69d64183029fb64ee882d29eb430364e189562e0a69e3fc/shellingham-1.1.0.tar.gz"
     sha256 "aac73de40225e3d63b4e8f7dc33adae2cae4d10ff0b09a32a0dc45151e34daa2"
-  end
-
-  resource "tomlkit" do
-    url "https://files.pythonhosted.org/packages/53/10/1f1186fcd453d10254450a7e947e92e6dbb0bf1418484aa4da2829be44f9/tomlkit-0.5.11.tar.gz"
-    sha256 "f044eda25647882e5ef22b43a1688fb6ab12af2fc50e8456cdfc751c873101cf"
   end
 
   resource "pexpect" do
