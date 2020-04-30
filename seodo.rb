@@ -62,66 +62,6 @@ class Seodo < Formula
     sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
   end
 
-  resource "clikit" do
-    url "https://files.pythonhosted.org/packages/ae/8b/37e5d886838717cebd4d6d9d7ca739c14ef07cfa68c04b41beef6390b213/clikit-0.4.2-py2.py3-none-any.whl"
-    sha256 "95394982cfa460a77ded2f173380a958e5f90c16972307c19d79b96f6e335326"
-  end
-
-  resource "cleo" do
-    url "https://files.pythonhosted.org/packages/4b/9d/10a5923c14c4f0faa98216af5262938f468af76101d9cd124ad2054943c7/cleo-0.7.6-py2.py3-none-any.whl"
-    sha256 "9443d67e5b2da79b32d820ae41758dd6a25618345cb10b9a022a695e26b291b9"
-  end
-
-  resource "cachy" do
-    url "https://files.pythonhosted.org/packages/a0/0c/45b249b0efce50a430b8810ec34c5f338d853c31c24b0b297597fd28edda/cachy-0.3.0.tar.gz"
-    sha256 "186581f4ceb42a0bbe040c407da73c14092379b1e4c0e327fdb72ae4a9b269b1"
-  end
-
-  resource "requests-toolbelt" do
-    url "https://files.pythonhosted.org/packages/86/f9/e80fa23edca6c554f1994040064760c12b51daff54b55f9e379e899cd3d4/requests-toolbelt-0.8.0.tar.gz"
-    sha256 "f6a531936c6fa4c6cfce1b9c10d5c4f498d16528d2a54a22ca00011205a187b5"
-  end
-
-  resource "jsonschema" do
-    url "https://files.pythonhosted.org/packages/7e/bb/32be576bc73f0bd02d92a62fc5fddcc127401027df9b06af732ad41904fe/jsonschema-3.1.0.tar.gz"
-    sha256 "edcdc3030424f3ebbcd95a9ea8310320ccbe655a3a693296569258bfa0707b37"
-  end
-
-  resource "pyrsistent" do
-    url "https://files.pythonhosted.org/packages/94/9e/bd3bd92d14cad2776ff558dfbcb0e591703240b7b55c230ac16754df5bf0/pyrsistent-0.14.2.tar.gz"
-    sha256 "6c00001d98dbf5e07edff7c414801c8efefe342e34209965918d38f7851c4c6b"
-  end
-
-  resource "pyparsing" do
-    url "https://files.pythonhosted.org/packages/3c/ec/a94f8cf7274ea60b5413df054f82a8980523efd712ec55a59e7c3357cf7c/pyparsing-2.2.0.tar.gz"
-    sha256 "0832bcf47acd283788593e7a0f542407bd9550a55a8a8435214a1960e04bcb04"
-  end
-
-  resource "cachecontrol" do
-    url "https://files.pythonhosted.org/packages/98/f5/76619a63f0e4a1d2f5a1792ebc233a395c648c63d3461dc0331479ef120a/CacheControl-0.12.4.tar.gz"
-    sha256 "a7d21ba4e3633d95ac9fed5be205ee6d1da36bdc4b8914eb7a57ff50b7e5628c"
-  end
-
-  resource "html5lib" do
-    url "https://files.pythonhosted.org/packages/da/66/ea28be5e5aa471f499b2dac8dd57c0755743daaec050c418f6e24688aaa6/html5lib-1.0-reupload.tar.gz"
-    sha256 "d09ae03efb1c64b489052110f570b7d6b0e9e0d30d66ba3c76f4340a215d5f80"
-  end
-
-  resource "shellingham" do
-    url "https://files.pythonhosted.org/packages/28/44/2da09f0d1f93b69d64183029fb64ee882d29eb430364e189562e0a69e3fc/shellingham-1.1.0.tar.gz"
-    sha256 "aac73de40225e3d63b4e8f7dc33adae2cae4d10ff0b09a32a0dc45151e34daa2"
-  end
-
-  resource "pexpect" do
-    url "https://files.pythonhosted.org/packages/1c/b1/362a0d4235496cb42c33d1d8732b5e2c607b0129ad5fdd76f5a583b9fcb3/pexpect-4.7.0.tar.gz"
-    sha256 "9e2c1fd0e6ee3a49b28f95d4b33bc389c89b20af6a1255906e90ff1262ce62eb"
-  end
-
-  resource "tomlkit" do
-    url "https://files.pythonhosted.org/packages/53/10/1f1186fcd453d10254450a7e947e92e6dbb0bf1418484aa4da2829be44f9/tomlkit-0.5.11.tar.gz"
-    sha256 "f044eda25647882e5ef22b43a1688fb6ab12af2fc50e8456cdfc751c873101cf"
-  end
-
   resource "poetry" do
     url "https://files.pythonhosted.org/packages/2c/79/7fc6e1ac5ebff02e39f24a17ddf56ef6370797a8371e6cfc5c7b56d3a1ea/poetry-1.0.5.tar.gz"
     sha256 "8e195ea8a4bce4f418a23fd828aa2f9ce06be7655720efd1d95beb0ee641030a"
